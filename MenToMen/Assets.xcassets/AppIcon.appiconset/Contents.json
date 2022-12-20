@@ -1,6 +1,7 @@
 {
   "images" : [
     {
+      "filename" : "M2M.png",
       "idiom" : "universal",
       "platform" : "ios",
       "size" : "1024x1024"

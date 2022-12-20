@@ -7,7 +7,7 @@ import SwiftUI
 struct MenToMenApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LoginView()
         }
     }
 }
