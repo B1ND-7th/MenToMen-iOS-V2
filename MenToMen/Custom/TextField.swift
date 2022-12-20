@@ -44,7 +44,7 @@ struct CustomTextField: View {
             if !animatedText.isEmpty {
                 Text(placeholder)
                     .scaleEffect(0.7, anchor: .leading)
-                    .foregroundColor(focus ? .accentColor : Color(.systemGray3))
+                    .foregroundColor(focus ? .accentColor : Color.gray)
                     .matchedGeometryEffect(id: "text", in: animation)
             }
             
@@ -52,7 +52,7 @@ struct CustomTextField: View {
             ZStack(alignment: .leading) {
                 if animatedText.isEmpty {
                     Text(placeholder)
-                        .foregroundColor(Color(.systemGray3))
+                        .foregroundColor(.gray)
                         .matchedGeometryEffect(id: "text", in: animation)
                 }
                 switch(type) {
@@ -69,7 +69,7 @@ struct CustomTextField: View {
             
             // MARK: - Line
             Rectangle()
-                .fill(focus ? .accentColor : Color(.systemGray3))
+                .fill(focus ? .accentColor : Color.gray)
                 .frame(height: 1.3)
                 .padding(.top, 10)
         }
