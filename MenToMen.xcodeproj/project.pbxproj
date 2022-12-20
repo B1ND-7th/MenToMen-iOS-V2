@@ -11,6 +11,15 @@
 		931FBE4529514C740054D9B2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931FBE4429514C740054D9B2 /* ContentView.swift */; };
 		931FBE4729514C750054D9B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 931FBE4629514C750054D9B2 /* Assets.xcassets */; };
 		931FBE4A29514C750054D9B2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 931FBE4929514C750054D9B2 /* Preview Assets.xcassets */; };
+		931FBE5229514D890054D9B2 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 931FBE5129514D890054D9B2 /* Alamofire */; };
+		931FBE5529514D970054D9B2 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 931FBE5429514D970054D9B2 /* Kingfisher */; };
+		931FBE5829514E4A0054D9B2 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931FBE5729514E4A0054D9B2 /* LoginView.swift */; };
+		931FBE5A29514E530054D9B2 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931FBE5929514E530054D9B2 /* LoginController.swift */; };
+		931FBE5D29514ED10054D9B2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931FBE5C29514ED10054D9B2 /* Constants.swift */; };
+		931FBE5F29514F680054D9B2 /* Responses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931FBE5E29514F680054D9B2 /* Responses.swift */; };
+		931FBE62295151260054D9B2 /* AuthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931FBE61295151260054D9B2 /* AuthController.swift */; };
+		931FBE642951514C0054D9B2 /* LoginData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931FBE632951514C0054D9B2 /* LoginData.swift */; };
+		931FBE66295152D00054D9B2 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931FBE65295152D00054D9B2 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +28,13 @@
 		931FBE4429514C740054D9B2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		931FBE4629514C750054D9B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		931FBE4929514C750054D9B2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		931FBE5729514E4A0054D9B2 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		931FBE5929514E530054D9B2 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		931FBE5C29514ED10054D9B2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		931FBE5E29514F680054D9B2 /* Responses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Responses.swift; sourceTree = "<group>"; };
+		931FBE61295151260054D9B2 /* AuthController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthController.swift; sourceTree = "<group>"; };
+		931FBE632951514C0054D9B2 /* LoginData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginData.swift; sourceTree = "<group>"; };
+		931FBE65295152D00054D9B2 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +42,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				931FBE5529514D970054D9B2 /* Kingfisher in Frameworks */,
+				931FBE5229514D890054D9B2 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +71,9 @@
 			children = (
 				931FBE4229514C740054D9B2 /* MenToMenApp.swift */,
 				931FBE4429514C740054D9B2 /* ContentView.swift */,
+				931FBE5B29514EC00054D9B2 /* Presets */,
+				931FBE602951511A0054D9B2 /* Auth */,
+				931FBE5629514E410054D9B2 /* Login */,
 				931FBE4629514C750054D9B2 /* Assets.xcassets */,
 				931FBE4829514C750054D9B2 /* Preview Content */,
 			);
@@ -65,6 +86,34 @@
 				931FBE4929514C750054D9B2 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		931FBE5629514E410054D9B2 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				931FBE5729514E4A0054D9B2 /* LoginView.swift */,
+				931FBE632951514C0054D9B2 /* LoginData.swift */,
+				931FBE5929514E530054D9B2 /* LoginController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		931FBE5B29514EC00054D9B2 /* Presets */ = {
+			isa = PBXGroup;
+			children = (
+				931FBE5C29514ED10054D9B2 /* Constants.swift */,
+				931FBE5E29514F680054D9B2 /* Responses.swift */,
+				931FBE65295152D00054D9B2 /* Extensions.swift */,
+			);
+			path = Presets;
+			sourceTree = "<group>";
+		};
+		931FBE602951511A0054D9B2 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				931FBE61295151260054D9B2 /* AuthController.swift */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +132,10 @@
 			dependencies = (
 			);
 			name = MenToMen;
+			packageProductDependencies = (
+				931FBE5129514D890054D9B2 /* Alamofire */,
+				931FBE5429514D970054D9B2 /* Kingfisher */,
+			);
 			productName = MenToMen;
 			productReference = 931FBE3F29514C740054D9B2 /* MenToMen.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +164,10 @@
 				Base,
 			);
 			mainGroup = 931FBE3629514C740054D9B2;
+			packageReferences = (
+				931FBE5029514D890054D9B2 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				931FBE5329514D970054D9B2 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 931FBE4029514C740054D9B2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,7 +194,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				931FBE5D29514ED10054D9B2 /* Constants.swift in Sources */,
+				931FBE66295152D00054D9B2 /* Extensions.swift in Sources */,
+				931FBE5F29514F680054D9B2 /* Responses.swift in Sources */,
+				931FBE5829514E4A0054D9B2 /* LoginView.swift in Sources */,
+				931FBE5A29514E530054D9B2 /* LoginController.swift in Sources */,
 				931FBE4529514C740054D9B2 /* ContentView.swift in Sources */,
+				931FBE642951514C0054D9B2 /* LoginData.swift in Sources */,
+				931FBE62295151260054D9B2 /* AuthController.swift in Sources */,
 				931FBE4329514C740054D9B2 /* MenToMenApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -195,7 +259,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -249,7 +313,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -270,16 +334,18 @@
 				DEVELOPMENT_TEAM = 56V747V83R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "멘투멘";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = net.mercen.MenToMen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -299,16 +365,18 @@
 				DEVELOPMENT_TEAM = 56V747V83R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "멘투멘";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = net.mercen.MenToMen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -339,6 +407,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		931FBE5029514D890054D9B2 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		931FBE5329514D970054D9B2 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		931FBE5129514D890054D9B2 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 931FBE5029514D890054D9B2 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		931FBE5429514D970054D9B2 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 931FBE5329514D970054D9B2 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 931FBE3729514C740054D9B2 /* Project object */;
 }

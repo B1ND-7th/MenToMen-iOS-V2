@@ -1,9 +1,5 @@
-//
-//  MenToMenApp.swift
-//  MenToMen
-//
-//  Created by Mercen on 2022/12/20.
-//
+/// MenToMen App Controller
+/// Created by Mercen on 2022/12/20.
 
 import SwiftUI
 
