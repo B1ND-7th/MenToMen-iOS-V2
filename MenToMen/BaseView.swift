@@ -1,13 +1,10 @@
-//
-//  ContentView.swift
-//  MenToMen
-//
-//  Created by Mercen on 2022/12/20.
-//
+/// Base View
+/// Created by Mercen on 2022/12/20.
 
 import SwiftUI
 
-struct ContentView: View {
+// MARK: - Base View
+struct BaseView: View {
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -16,11 +13,5 @@ struct ContentView: View {
             Text("Hello, world!")
         }
         .padding()
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
     }
 }

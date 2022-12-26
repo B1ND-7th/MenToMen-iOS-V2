@@ -49,7 +49,7 @@ struct LoginView: View {
     
     var body: some View {
         
-        VStack(spacing: 0) {
+        VStack(spacing: 10) {
             
             // MARK: - Logo
             Image("M2MLogo")
@@ -82,7 +82,7 @@ struct LoginView: View {
                     .clipShape(Capsule())
             }
             .disabled(loginId.isEmpty || loginPw.isEmpty || auth)
-            .padding(.top, 40)
+            .padding(.top, 20)
         }
         .frame(maxWidth: 500)
         .padding(30)

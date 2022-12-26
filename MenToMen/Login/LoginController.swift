@@ -7,7 +7,7 @@ import CryptoKit
 import AVFoundation
 
 // MARK: - Fetch DAuth Code
-func fetchCode(loginId: String, loginPw: String, completion: @escaping (((AFDataResponse<Data>) -> Void))) {
+func fetchCode(loginId: String, loginPw: String, completion: @escaping (AFDataResponse<Data>) -> Void) {
     AF.request("http://dauth.b1nd.com/api/auth/login",
                method: .post,
                parameters: ["id": loginId, "pw":
@@ -33,7 +33,7 @@ func decodeCode(_ response: AFDataResponse<Data>) -> String {
 }
 
 // MARK: - Start Auth
-func fetchAuth(code: String, completion: @escaping (((AFDataResponse<Data>) -> Void))) {
+func fetchAuth(code: String, completion: @escaping (AFDataResponse<Data>) -> Void) {
     AF.request("\(api)/auth/code",
                method: .post,
                parameters: ["code": code],
