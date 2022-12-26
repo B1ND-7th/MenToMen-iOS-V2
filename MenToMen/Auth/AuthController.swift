@@ -15,3 +15,7 @@ func getToken(_ tokenType: TokenType) -> String? {
 func saveToken(_ tokenType: TokenType, _ value: String) {
     UserDefaults.standard.set(value, forKey: String(describing: tokenType))
 }
+
+func removeToken(_ tokenType: TokenType) {
+    UserDefaults.standard.removeObject(forKey: String(describing: tokenType))
+}
