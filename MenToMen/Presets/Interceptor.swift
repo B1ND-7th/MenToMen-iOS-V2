@@ -42,7 +42,7 @@ final class Interceptor: RequestInterceptor {
             case .failure(let error):
                 print("통신 오류!\nCode:\(error._code), Message: \(error.errorDescription!)")
                 removeToken(.accessToken)
-                removeToken(.accessToken)
+                removeToken(.refreshToken)
                 completion(.doNotRetryWithError(error))
                 exit(0)
             }

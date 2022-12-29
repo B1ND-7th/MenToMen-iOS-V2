@@ -6,12 +6,11 @@ import SwiftUI
 // MARK: - Base View
 struct BaseView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        if getToken(.accessToken) == nil {
+            LoginView()
+                .zIndex(2)
+        } else {
+            
         }
-        .padding()
     }
 }

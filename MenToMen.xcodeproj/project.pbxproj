@@ -49,6 +49,7 @@
 		931FBE7129518D230054D9B2 /* ShakeEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeEffect.swift; sourceTree = "<group>"; };
 		931FBE73295190720054D9B2 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		931FBE76295192E60054D9B2 /* PostsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsView.swift; sourceTree = "<group>"; };
+		9339E88B295D907A008A3F40 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +68,7 @@
 		931FBE3629514C740054D9B2 = {
 			isa = PBXGroup;
 			children = (
+				9339E88B295D907A008A3F40 /* LICENSE */,
 				93027CFD29596E7F00297774 /* README.md */,
 				931FBE4129514C740054D9B2 /* MenToMen */,
 				931FBE4029514C740054D9B2 /* Products */,
